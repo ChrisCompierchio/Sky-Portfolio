@@ -1,0 +1,42 @@
+.homebanner-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50vw;
+  top: 50vh;
+  transform: translate3D(-50%, -50%, 0);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+      0 6px 6px rgba(0, 0, 0, 0.1); */
+  padding: 2rem;
+}
+.homebanner-container h1{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--head-font);
+  font-weight: bolder;
+  font-size: 5rem;
+  color: var(--secondary);
+}
+.homebanner-container h1 span{
+  font-family: var(--head-font);
+  font-weight: bolder;
+  font-size: 5rem;
+  color: var(--secondary);
+}
+.homebanner-container h6{
+  color: var(--text);
+  text-align: center;
+  font-size: 1.5rem;
+  width: max-content;
+}
+.tree-img{
+  width: 6.5rem;
+  height: 6.5rem;
+  transform: translate3d(-20px, 10px, 0);
+}
+.first-word{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: -20px;
+}

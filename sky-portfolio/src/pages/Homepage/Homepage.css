@@ -1,0 +1,8 @@
+.homepage-container{
+  width: 100vw;
+  height: 100dvh;
+  background-image: url('left_corner.png'), url('right_corner.png');
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: clamp(50px, 40vw, 300px);
+}

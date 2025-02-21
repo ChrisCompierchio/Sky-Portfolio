@@ -1,0 +1,39 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.download-icon{
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+.download-icon:hover{
+  cursor: pointer;
+  color: var(--purple);
+}
+.resume-container{
+  width: clamp(300px, 80%, 800px);
+  padding: 10px 20px;
+}
+.resume-section-header{
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: black 2px solid;
+  margin-bottom: 15px;
+}
+.resume-section{
+  margin-bottom: 1.5rem;
+}
+.resume-subheader{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.resume-text{
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.italics{
+  font-style: italic;
+  font-size: 0.9rem;
+}
