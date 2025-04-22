@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Page Not Found</title>
-    <script>
-      // Redirect to the correct route
-      const redirectTo = window.location.pathname.replace('/Sky-Portfolio', '');
-      window.location.replace(`/Sky-Portfolio${redirectTo}`);
-    </script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found</title>
+  <script>
+    const basePath = '/Sky-Portfolio/';
+    const currentPath = window.location.pathname;
 
-  <body></body>
+    // Redirect only if the current path is not already correct
+    if (!currentPath.startsWith(basePath)) {
+      window.location.replace(basePath + currentPath.substring(1));
+    }
+  </script>
+</head>
+
+<body></body>
 
 </html>
